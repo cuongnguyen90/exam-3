@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    function printFibonanci (num) {
+        let arr = [0,1];
+        let list = [];
+        for (let i = 2; i < num; i++){
+            arr.push(arr[i - 2] + arr[i -1])
+        }
+        for (i = 0 ; i < arr.length - 1 ;i++){
+            if (arr[i] < num){
+                list.push(arr[i]);
+            }
+        }
+
+        document.write("Day so Fibonacci nho hon so da nhap vao la :" + list);
+    }
+    printFibonanci(prompt('nhap vao so bat ky'))
+</script>
+</body>
+</html>
